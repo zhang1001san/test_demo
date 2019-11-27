@@ -15,8 +15,8 @@ public class RowModel extends BaseRowModel {
     @ExcelProperty(index = 4)
     private String address;
 
-    @ExcelProperty(index = 5)
-    private String newAddress;
+    @ExcelProperty(value = "微服务",index = 5)
+    private String microService;
 
     public String getId() {
         return id;
@@ -59,23 +59,11 @@ public class RowModel extends BaseRowModel {
     }
 
 
-    public String getNewAddress() {
-        return newAddress;
+    public String getMicroService() {
+        return microService;
     }
 
-    public void setNewAddress(String newAddress) {
-        this.newAddress = newAddress;
-    }
-
-    @Override
-    public String toString() {
-        return "RowModel{" +
-                "id='" + id + '\'' +
-                ", nickName='" + nickName + '\'' +
-                ", name='" + name + '\'' +
-                ", age=" + age +
-                ", address='" + address + '\'' +
-                ", newAddress='" + newAddress + '\'' +
-                '}';
+    public void setMicroService(String microService) {
+        this.microService = microService;
     }
 }
