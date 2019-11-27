@@ -2,14 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e752679-c28a-458e-b26a-b145dd33f7e8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/it/model/CountModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/toolkit_smartfox_info.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/excelstatistics.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/it/model/RowModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it/model/RowModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/it/util/ExcelUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it/util/ExcelUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/it/ExcelUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/it/ExcelUtilTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -148,7 +140,7 @@
       <option name="presentableId" value="Default" />
       <updated>1574859331823</updated>
       <workItem from="1574859334770" duration="5945000" />
-      <workItem from="1574865480455" duration="2240000" />
+      <workItem from="1574865480455" duration="2606000" />
     </task>
     <servers />
   </component>

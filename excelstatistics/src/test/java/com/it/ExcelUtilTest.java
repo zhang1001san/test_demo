@@ -12,24 +12,26 @@ import java.io.*;
 import java.util.*;
 
 public class ExcelUtilTest {
-    private String microServices="basicinfo,cfg,lld,other";
-    private String other="other";
-    private Map<String,Integer> microServiceMap=null;
-    private List<String> microServiceList=null;
+    private String microServices = "basicinfo,cfg,lld,other,all";
+    private String other = "other";
+    private String all = "all";
+    private Map<String, Integer> microServiceMap = null;
+    private List<String> microServiceList = null;
+
     @Before
-    public void onStart(){
-        microServiceMap=new LinkedHashMap<>();
-        microServiceList=Arrays.asList(microServices.split(","));
+    public void onStart() {
+        microServiceMap = new LinkedHashMap<>();
+        microServiceList = Arrays.asList(microServices.split(","));
         for (String micro : microServiceList) {
-            microServiceMap.put(micro,0);
+            microServiceMap.put(micro, 0);
         }
     }
 
 
     @Test
     public void readExcel() throws IOException {
-        String file="D:\\xxxx系统数据库.xlsx";
-        try(BufferedInputStream bis = new BufferedInputStream(new FileInputStream(file))) {
+        String file = "D:\\xxxx系统数据库.xlsx";
+        try (BufferedInputStream bis = new BufferedInputStream(new FileInputStream(file))) {
             List<BaseRowModel> baseRowModels = ExcelUtil.readExcel(bis, RowModel.class);
             baseRowModels.stream().forEach(System.out::println);
         }
@@ -37,30 +39,32 @@ public class ExcelUtilTest {
 
     @Test
     public void writeExcelTest() throws IOException {
-        String inputFile="D:\\xxxx系统数据库.xlsx";
-        String outputFile="D:\\xxxx系统数据库22.xlsx";
+        String inputFile = "D:\\xxxx系统数据库.xlsx";
+        String outputFile = "D:\\xxxx系统数据库22.xlsx";
         File file = new File(outputFile);
-        try(BufferedInputStream bis = new BufferedInputStream(new FileInputStream(inputFile))
-            ) {
+        try (BufferedInputStream bis = new BufferedInputStream(new FileInputStream(inputFile))
+        ) {
             List<RowModel> baseRowModels = ExcelUtil.readExcel(bis, RowModel.class);
-            boolean isFind=false;
+            boolean isFind = false;
             for (RowModel baseRowModel : baseRowModels) {
-                isFind=false;
+                isFind = false;
                 for (String micro : microServiceList) {
-                    if (baseRowModel.getAddress().contains(micro)){
-                        isFind=true;
+                    if (baseRowModel.getAddress().contains(micro)) {
+                        isFind = true;
                         count(micro);
+
                         baseRowModel.setMicroService(micro);
                         break;
                     }
                 }
                 // 没找到标记为other
-                if (!isFind){
+                if (!isFind) {
                     count(other);
                     baseRowModel.setMicroService(other);
                 }
+                count(all);
             }
-            ExcelUtil.writeExcel(file,baseRowModels);
+            ExcelUtil.writeExcel(file, baseRowModels);
         }
     }
 
@@ -69,20 +73,20 @@ public class ExcelUtilTest {
      */
     @After
     public void writeCount() throws FileNotFoundException {
-        String outputFile="D:\\xxxx系统数据库count.xlsx";
+        String outputFile = "D:\\xxxx系统数据库count.xlsx";
         File file = new File(outputFile);
         ArrayList<CountModel> countModels = new ArrayList<>();
-        CountModel countModel=null;
-        for (Map.Entry<String, Integer> countEntry:microServiceMap.entrySet()){
-            countModel=new CountModel(countEntry.getKey(),countEntry.getValue());
+        CountModel countModel = null;
+        for (Map.Entry<String, Integer> countEntry : microServiceMap.entrySet()) {
+            countModel = new CountModel(countEntry.getKey(), countEntry.getValue());
             countModels.add(countModel);
         }
-        ExcelUtil.writeExcel(file,countModels);
+        ExcelUtil.writeExcel(file, countModels);
     }
 
-    public void count(String micro){
+    public void count(String micro) {
         Integer count = microServiceMap.get(micro);
         count++;
-        microServiceMap.put(micro,count);
+        microServiceMap.put(micro, count);
     }
 }
