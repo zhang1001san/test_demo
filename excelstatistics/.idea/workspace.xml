@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="excelstatistics:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="7e752679-c28a-458e-b26a-b145dd33f7e8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../excel/excel.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +48,9 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.30574712" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RunDashboard">
@@ -55,7 +65,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ExcelUtilTest.writeExcelTest">
+  <component name="RunManager" selected="Application.Start">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.it.action.Main" />
       <module name="excelstatistics" />
@@ -69,11 +79,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Start" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.it.controller.Start" />
+      <module name="excelstatistics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.it.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ExcelUtilTest.readExcel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="excelstatistics" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.it.*" />
+          <option name="PATTERN" value="com.it.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -89,7 +112,7 @@
       <module name="excelstatistics" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.it.*" />
+          <option name="PATTERN" value="com.it.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -105,7 +128,7 @@
       <module name="excelstatistics" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.it.*" />
+          <option name="PATTERN" value="com.it.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,6 +142,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Start" />
         <item itemvalue="JUnit.ExcelUtilTest.writeExcelTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.ExcelUtilTest.test12" />
@@ -141,6 +165,7 @@
       <updated>1574859331823</updated>
       <workItem from="1574859334770" duration="5945000" />
       <workItem from="1574865480455" duration="2877000" />
+      <workItem from="1574949005638" duration="5634000" />
     </task>
     <servers />
   </component>
@@ -152,7 +177,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
