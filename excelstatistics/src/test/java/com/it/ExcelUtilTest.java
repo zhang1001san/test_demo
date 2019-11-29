@@ -49,7 +49,7 @@ public class ExcelUtilTest {
             for (RowModel baseRowModel : baseRowModels) {
                 isFind = false;
                 for (String micro : microServiceList) {
-                    if (baseRowModel.getAddress().contains(micro)) {
+                    if (baseRowModel.getFilePath().contains(micro)) {
                         isFind = true;
                         count(micro);
 

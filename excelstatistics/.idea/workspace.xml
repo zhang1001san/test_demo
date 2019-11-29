@@ -7,9 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e752679-c28a-458e-b26a-b145dd33f7e8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../excel/excel.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/toolkit_smartfox_info.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../excel/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../excel/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../excel/src/main/java/com/it/controller/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/../excel/src/main/java/com/it/controller/Start.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../excel/src/main/java/com/it/model/RowModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../excel/src/main/java/com/it/model/RowModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/it/model/RowModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it/model/RowModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/it/ExcelUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/it/ExcelUtilTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/it/model/RowModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/it/model/RowModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/excelstatistics-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/excelstatistics-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/it/ExcelUtilTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/it/ExcelUtilTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -166,6 +174,7 @@
       <workItem from="1574859334770" duration="5945000" />
       <workItem from="1574865480455" duration="2877000" />
       <workItem from="1574949005638" duration="5634000" />
+      <workItem from="1575003238651" duration="728000" />
     </task>
     <servers />
   </component>

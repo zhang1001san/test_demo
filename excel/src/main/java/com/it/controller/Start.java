@@ -41,14 +41,6 @@ public class Start {
     }
 
 
-    public static void readExcel() throws IOException {
-        String file = "D:\\xxxx系统数据库.xlsx";
-        try (BufferedInputStream bis = new BufferedInputStream(new FileInputStream(file))) {
-            List<BaseRowModel> baseRowModels = ExcelUtil.readExcel(bis, RowModel.class);
-            baseRowModels.stream().forEach(System.out::println);
-        }
-    }
-
 
     public static void writeExcelTest() throws IOException {
         String inputFile = prop.getProperty("srcFile");
@@ -61,7 +53,7 @@ public class Start {
             for (RowModel baseRowModel : baseRowModels) {
                 isFind = false;
                 for (String micro : microServiceList) {
-                    if (baseRowModel.getAddress().contains(micro)) {
+                    if (baseRowModel.getFilePath().contains(micro)) {
                         isFind = true;
                         count(micro);
 

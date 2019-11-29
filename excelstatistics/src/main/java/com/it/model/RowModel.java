@@ -5,33 +5,37 @@ import com.alibaba.excel.metadata.BaseRowModel;
 
 public class RowModel extends BaseRowModel {
     @ExcelProperty(index = 0)
-    private String id;
+    private String cid;
+
     @ExcelProperty(index = 1)
-    private String nickName;
+    private String path;
+
     @ExcelProperty(index = 2)
     private String name;
-    @ExcelProperty(index = 3)
-    private int age;
-    @ExcelProperty(index = 4)
-    private String address;
 
-    @ExcelProperty(value = "微服务",index = 5)
+    @ExcelProperty(index = 3)
+    private String time;
+
+    @ExcelProperty(index = 4)
+    private String filePath;
+
+    @ExcelProperty(value = "微服务", index = 5)
     private String microService;
 
-    public String getId() {
-        return id;
+    public String getCid() {
+        return cid;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setCid(String cid) {
+        this.cid = cid;
     }
 
-    public String getNickName() {
-        return nickName;
+    public String getPath() {
+        return path;
     }
 
-    public void setNickName(String nickName) {
-        this.nickName = nickName;
+    public void setPath(String path) {
+        this.path = path;
     }
 
     public String getName() {
@@ -42,22 +46,21 @@ public class RowModel extends BaseRowModel {
         this.name = name;
     }
 
-    public int getAge() {
-        return age;
+    public String getTime() {
+        return time;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setTime(String time) {
+        this.time = time;
     }
 
-    public String getAddress() {
-        return address;
+    public String getFilePath() {
+        return filePath;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setFilePath(String filePath) {
+        this.filePath = filePath;
     }
-
 
     public String getMicroService() {
         return microService;
