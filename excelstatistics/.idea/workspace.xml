@@ -7,13 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e752679-c28a-458e-b26a-b145dd33f7e8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/it/controller/Start.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/it/MyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/toolkit_smartfox_info.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/it/model/RowModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it/model/RowModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/it/ExcelUtilTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/it/model/RowModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/it/model/RowModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/it/ExcelUtilTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/it/ExcelUtilTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/excelstatistics-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/excelstatistics-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,34 +49,41 @@
   </component>
   <component name="ProjectId" id="1UCSxalvXbYuGaHFKAclyAdeinG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.30574712" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.Start">
+  <component name="RunManager" selected="Application.MyTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.it.action.Main" />
       <module name="excelstatistics" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.it.action.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.it.MyTest" />
+      <module name="excelstatistics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.it.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,22 +100,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ExcelUtilTest.readExcel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="excelstatistics" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.it.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.it" />
-      <option name="MAIN_CLASS_NAME" value="com.it.ExcelUtilTest" />
-      <option name="METHOD_NAME" value="readExcel" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -144,13 +138,25 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MyTest" />
         <item itemvalue="Application.Start" />
         <item itemvalue="JUnit.ExcelUtilTest.writeExcelTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.ExcelUtilTest.test12" />
-        <item itemvalue="JUnit.ExcelUtilTest.readExcel" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SshConsoleOptionsProvider">
     <option name="myEncoding" value="UTF-8" />
@@ -168,7 +174,12 @@
       <workItem from="1574859334770" duration="5945000" />
       <workItem from="1574865480455" duration="2877000" />
       <workItem from="1574949005638" duration="5634000" />
-      <workItem from="1575003238651" duration="2347000" />
+      <workItem from="1575003238651" duration="2557000" />
+      <workItem from="1575047873930" duration="208000" />
+      <workItem from="1575048184822" duration="24000" />
+      <workItem from="1575048222348" duration="2264000" />
+      <workItem from="1575090993453" duration="343000" />
+      <workItem from="1575211225477" duration="1288000" />
     </task>
     <servers />
   </component>
@@ -187,5 +198,63 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="449" y="142" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1575048198810">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="449" y="142" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1575048198810" />
+    <state x="487" y="286" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1575049283477">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="487" y="286" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1575049283477" />
+    <state width="1493" height="394" key="GridCell.Tab.0.bottom" timestamp="1575212575788">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="394" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1575212575788" />
+    <state width="1493" height="394" key="GridCell.Tab.0.center" timestamp="1575212575788">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="394" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1575212575788" />
+    <state width="1493" height="394" key="GridCell.Tab.0.left" timestamp="1575212575788">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="394" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1575212575788" />
+    <state width="1493" height="394" key="GridCell.Tab.0.right" timestamp="1575212575788">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="394" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1575212575788" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1575211812151">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1575211812151" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1575211812151">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1575211812151" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1575211812151">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1575211812151" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1575211812151">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1575211812151" />
+    <state x="537" y="125" key="RollbackChangesDialog" timestamp="1575212349185">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="537" y="125" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1575212349185" />
+    <state x="272" y="57" key="SettingsEditor" timestamp="1575049128188">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="272" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1575049128188" />
+    <state x="461" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1575211235955">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="461" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1575211235955" />
+    <state x="323" y="151" width="889" height="566" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1575211810218">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="323" y="151" width="889" height="566" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824@0.0.1536.824" timestamp="1575211810218" />
   </component>
 </project>
