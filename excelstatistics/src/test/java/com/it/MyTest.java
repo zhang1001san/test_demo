@@ -4,6 +4,7 @@ public class MyTest {
     public static void main(String[] args) {
         String microName = getMicroName("basicinfo");
         System.out.printf(microName);
+        
     }
 
     public static String getMicroName(String micro){

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.dao.UserMapper">
+    <!--配置 dao 中查询所有的方法 findAll() -->
+    <select id="getList" resultType="java.util.HashMap">
+        select * from haha;
+    </select>
+
+    <select id="getMapList" resultType="java.util.LinkedHashMap">
+        select * from ${tableName}
+        <where>
+            <foreach collection="parameterMap" item="value" index="key" separator=" and ">
+                ${key}=#{value}
+            </foreach>
+        </where>
+        ;
+    </select>
+
+    <delete id="deleteTask" >
+        delete from ${tableName}
+        <where>
+            <foreach collection="deleteParameterMap" item="value" index="key" separator=" and ">
+                ${key}=#{value}
+            </foreach>
+        </where>
+        ;
+    </delete>
+
+
+    <insert id="copyTask">
+        insert into ${tableName}
+        (
+        <foreach collection="selectColumns" item="value" index="key" separator=",">
+            ${value}
+        </foreach>
+        )values
+        <foreach collection="insertInfoList" item="itemMap"  separator=",">
+            (
+            <foreach collection="itemMap" item="value" index="key" separator=",">
+                #{value}
+            </foreach>
+            )
+        </foreach>;
+    </insert>
+
+</mapper>
